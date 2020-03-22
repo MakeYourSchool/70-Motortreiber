@@ -1,22 +1,20 @@
-# Grove - I2C Motor Driver v1.3  [![Build Status](https://travis-ci.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3)
+Motortreiber
+----
+*(Seeed Studio Grove – I2C Motor Driver V1.3)*
 
-![](https://raw.githubusercontent.com/SeeedDocument/Grove-I2C_Motor_Driver_V1.3/master/img/I2CMotorDriver_New.jpg)
+<img src=https://www.makeyourschool.de/wp-content/uploads/2018/10/70_motortreiber-1024x1024.jpg width=400px>
 
+Im Allgemeinen reichen die Stromstärken, die ein Mikrocontroller liefern kann, nicht aus, um einen Motor direkt anzusteuern. Deshalb gibt es unterschiedliche Arten von sogenannten Motortreibern. Diese werden eingangsseitig am Mikrocontroller und ausgangsseitig am Motor angeschlossen. Sie übersetzen die Kommandos des Mikrocontrollers in die vom Motor benötigten Stromstärken. Gleichzeitig wird der Mikrocontroller von etwaigen Kurzschlüssen oder Überspannungen, die seitens des Motors entstehen könnten, geschützt.
 
-The Grove - I2C Motor Driver V1.3 (latest version) can directly control Stepper Motor or DC Motor. Its heart is a dual channel H-bridge driver chip（L298P）that can handle current up to 2A per channel, controlled by an Atmel ATmega8L which handles the I2C communication with for example an Arduino. Both motors can be driven simultaneously while set to a different speed and direction. It can power two brushed DC motors or one 4-wire two-phase stepper motor. It requires a 6V to 15V power supply to power the motor and has an onboard 5V voltage regulator which can power the I2C bus and the Arduino(selectable by jumper). All driver lines are protected by diodes from back-EMF.
+Die vorliegende Ausführung kann einen vieradrigen Schrittmotor oder bis zu zwei Gleichstrommotoren ansteuern. Falls zwei Gleichstrommotoren angeschlossen werden, können diese unabhängig voneinander sowohl bezüglich der Richtung und Geschwindigkeit gesteuert werden.
 
-- Grove Compatible
-- I2C Interface
-- Adjustable motor speed and rotation direction
-- Changeable slave address by hardware
+Der Motortreiber wird direkt oder mithilfe des Grove Shields an einen Arduino oder Raspberry Pi über die serielle Schnittstelle I2C  angeschlossen. Der Treiber benötigt dabei eine separate Stromversorgung zwischen 6V und 15V.
 
+Ein Beispielprojekt könnte ein Roboter sein, der ein frei drehbares und zwei angetriebene Räder besitzt. Die zwei Räder können mithilfe des Motortreibers sowohl vorwärts als auch rückwärts gesteuert werden. So kann der Roboter in alle Richtungen navigiert werden.
 
-## Installation
+Im Folgenden ist die grundlegende Verwendung des Motortreibers zusammengefasst (bisher nur in englischer Sprache):
 
-```
-git clone https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3.git
-```
-or download the zip.
+---
 
 ## Usage
 
@@ -87,4 +85,17 @@ StepperRun(512, 1);
 
 Note that number of pulses for "__step" is 4 (for 2-phase motor), and the number of steps of one motor turn is dependent on the spec of the stepping motor. For example, for the motor with 100 pulse per turn (3.6 degree per pulse), __step=25 will make one turn of the motor.
 
+----
 
+In diesem Repository findet ihr **Bibliotheken und Beispiel-Codes**, mit denen der hier vorliegende Sensor getestet werden kann. Wir richten uns hiermit an **jeden Mentor und jede Mentorin aus dem Rahmen von Make Your School** und ermutigen euch, die hier zusammengestellten Codes **nach Bedarf** und individuell gemachten Erfahrungen **anzupassen**. Beispiele können einfach im Ordner /examples hinzugefügt oder angepasst werden. Wir versuchen das Repository regelmäßig mit Hilfe von euren Änderungsvorschlägen zu aktualisieren.
+
+Das Repository basiert grundlegend auf den veröffentlichten Informationen und Codes von Seeed Studio. 
+Die deutsche Übersetzung stammt von [Make Your School](https://www.makeyourschool.de/). Fehlinterpretationen und Änderungen vorbehalten. Die Informationen dürfen frei genutzt, angepasst und verbreitet werden, solange die Lizenzrechte (siehe License.txt) beachtet werden.
+
+**Weitere Informationen:**
+
+[Repository von Seed Studio](https://github.com/Seeed-Studio/)
+
+[Offizielles Wiki von Seed Studio](http://wiki.seeedstudio.com/Grove/)
+
+[Materialkoffer von Make Your School](https://www.makeyourschool.de/material/)
