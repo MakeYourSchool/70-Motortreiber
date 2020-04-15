@@ -98,8 +98,8 @@ Das Repository basiert grundlegend auf den veröffentlichten Informationen und C
 
 **Weitere Informationen:**
 
-[Repository von Seed Studio](https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3)
+[Repository von Seeed Studio](https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3)
 
-[Offizielles Wiki von Seed Studio](http://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.3/)
+[Offizielles Wiki von Seeed Studio](http://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.3/)
 
-[Materialkoffer von Make Your School](https://www.makeyourschool.de/material/motortreiber/)
+[Materialkoffer von *Make Your School*](https://www.makeyourschool.de/material/motortreiber/)
